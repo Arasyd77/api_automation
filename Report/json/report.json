@@ -1,0 +1,222 @@
+{
+  "config": {
+    "configFile": "D:\\Repo Arasyd\\DigitalSkola\\playwright.config.js",
+    "rootDir": "D:/Repo Arasyd/DigitalSkola/Tugas",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "report/json/report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "report/html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Repo Arasyd/DigitalSkola/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "D:/Repo Arasyd/DigitalSkola/Tugas",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.49.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tugas-api.spec.js",
+      "file": "tugas-api.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Tc1-Get",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 298,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-20T15:28:40.111Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c8316be35bc92aa2a7d-e50896279d52e83e7630",
+          "file": "tugas-api.spec.js",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "Tc2-Post",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 1057,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Response Data: {\n  name: \u001b[32m'morpheus'\u001b[39m,\n  job: \u001b[32m'leader'\u001b[39m,\n  id: \u001b[32m'568'\u001b[39m,\n  createdAt: \u001b[32m'2024-12-20T15:28:41.249Z'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-20T15:28:40.102Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c8316be35bc92aa2a7d-34e82cb34dfc16ad1348",
+          "file": "tugas-api.spec.js",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "Tc3-Put",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 856,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Response Data: {\n  name: \u001b[32m'morpheus'\u001b[39m,\n  job: \u001b[32m'zion resident'\u001b[39m,\n  updatedAt: \u001b[32m'2024-12-20T15:28:41.062Z'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-20T15:28:40.114Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c8316be35bc92aa2a7d-03c12a933dbbdc2e9a93",
+          "file": "tugas-api.spec.js",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "Tc4-Delete",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 797,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Delete Response Status: \u001b[33m204\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-20T15:28:40.214Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3c8316be35bc92aa2a7d-386fa02c827806884be5",
+          "file": "tugas-api.spec.js",
+          "line": 63,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-12-20T15:28:38.207Z",
+    "duration": 2997.2620000000006,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
